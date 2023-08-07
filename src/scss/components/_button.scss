@@ -1,0 +1,15 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border: 2px solid $color-blue;
+    border-radius: 100px;
+    line-height: 24px;
+    color: $color-blue;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,59 @@
+.form {
+    max-width: 616px;
+    padding-top: 30px;
+    margin: 0 auto 30px;
+    position: relative;
+    &__user {
+        margin-bottom: 44px;
+    }
+    .info-form {
+        &__title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &__list {
+            margin-bottom: 30px;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &__btn-delete {
+            padding: 0;
+            border: none;
+        }
+        .list__item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        &__btn-save {
+            background-color: $color-blue;
+            color: $color-white;
+            border: none;
+            &:hover {
+                background-color: #0F79AF;
+            }
+            &:active {
+                background-color: #59C79F;
+            }
+        }
+    }
+    &__btn-add {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 226px;
+        &:hover {
+            background-color: rgba(110, 65, 226, 0.04);
+        }
+        &:active {
+            background-color: rgba(110, 65, 226, 0.16);
+        }
+    }
+    &__children {
+        margin-bottom: 30px;
+    }
+}

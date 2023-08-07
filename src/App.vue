@@ -1,32 +1,31 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" @click="$router.push('/')">
+          <img src="@/assets/img/logo.png" alt="alef logo" />
+        </a>
+        <nav class="header__nav nav">
+          <router-link class="nav__link" to="/">Форма</router-link>
+          <router-link class="nav__link" to="/preview">Превью</router-link>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <router-view />
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">all rights reserved</p>
+    </footer>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  name: "App",
+};
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style lang="scss"></style>
